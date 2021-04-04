@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common CSS Properties</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>What it does:</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">Display</td>
+                <td>The Display property in CSS defines how the components
+                    (div, hyperlink, heading, etc) are going to be placed on the 
+                    web page. As the name suggests, this property is used to define 
+                    the display of the different parts of a web page. </td>
+                <td><img src="/images/display.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="name">Width and Height</td>
+                <td>Width and height properties are used closely with display:block and display:inline to set the width and height of HTML elements while creating a website. Common units units for Width and Height are:
+                    <br>
+                    <ul>
+                        <li>px - Pixels</li>
+                        <li>em - A unit of measurement, where 1 em = current font size</li>
+                        <li>rem - Root em. Same measurement as em, but makes life much easier without the inheritance problem</li>
+                        <li>% - Percentages</li>
+                        <li>auto - highly useful unit, will explain below.</li>
+                    </ul>
+                </td>
+                <td><img src="/images/widthheight.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="name">Margins and Paddings</td>
+                <td>Margins and Paddings dictate the spaces between elements on your website. They are very similar and have the same units as Width and Height mentioned above.
+                    <br><br>
+                    The only difference between margins and paddings is the area the exert control over. Margins affect the area outside of borders whereas paddings affect areas inside the border. It is useful to refer to the box model below: <br><br>
+                    <img src="/images/box-model.jpeg" alt="">
+                </td>
+                <td>
+                    <img src="/images/widthheightsyntax.png" alt="">
+                </td>
+            </tr>  
+            <tr>
+                <td class="name">Border</td>
+                <td>Borders have 3 different properties that you have take care of: <br>
+                    <ul>
+                        <li>border-width – width of the border. Same units as width and height</li>
+                        <li>border-style – style of the border. Usual values are solid and dashed</li>
+                        <li>border-color – color of the border. Hex, and rgb values can be used</li>
+                    </ul>
+                </td>
+                <td><img src="/images/borders.png" alt=""></td>
+            </tr>  
+            <tr>
+                <td class="name">Color</td>
+                <td>The color property can accept any CSS color value. <br><br>
+                    <ul>
+                        <li>Named colors: for example, “aqua”.</li>
+                        <li>Hex colors: for example, #00FFFF or #0FF.
+                        </li>
+                        <li>RGB and RGBa colors: for example, rgb(0, 255, 255) and rgba(0, 255, 255, .5).
+                        </li>
+                        <li>HSL and HSLa colors: for example, hsl(180, 100%, 50%) and hsla(180, 100%, 50%, .5).
+                        </li>
+                    </ul>
+                </td>
+                <td><img src="/images/colors.png" alt=""></td>
+            </tr>  
+            <tr>
+                <td class="name">Background</td>
+                <td>Background refers to the background of the HTML element. Like many CSS properties, background has a shorthand to it as well. <br><br>
+                    Here are the explanations for the background properties in order from left to right:
+                    <ul>
+                        <li>background-color: color of the background. Takes #hex value or an rgb value</li>
+                        <li>background-image: url(URI). Takes on the path to your image</li>
+                        <li>background-repeat: whether you would like the background to repeat if the width exceeds the background size. Other values are repeat, repeat-x and repeat-y.</li>
+                        <li>background-position: position of the background relative to the HTML element. Two values are needed here, X and Y, where X is the amount of offset from the left and Y is the amount of offset from the top. Takes on either unit values (as with width and height) or left,center,right and top,center,bottom for left and right respectively.</li>
+                    </ul>
+                </td>
+                <td><img src="/images/background.png" alt=""></td>
+            </tr>  
+            <tr>
+                <td class="name">Font</td>
+                <td>Fonts in general refer to the appearance of text in your website. There are a few things to look out for. Like other properties, font has a shorthand. 
+                    Do note that it is common to see the font shorthand declaration only once in the whole CSS file. It is common to use the different properties at other times: <br><br>
+                    Here are the explanations for the font properties in order from left to right:
+                    <ul>
+                        <li>font-style: Style of the font. valid values are either italic or normal. Defaults to normal. Optional property in font shorthand</li>
+                        <li>font-variant: variant of the font. valid values are normal and small caps. Defaults to normal. Optional property in font shorthand and is not often used</li>
+                        <li>font-weight: weight of font. determines if text is bold. valid values are normal, bold, bolder, or 100 - 900. Optional property in font shorthand</li>
+                        <li>font-size: size of font. Takes a value thats the same as width and height</li>
+                        <li>line-height: determines the amount of space above and below the text. Very important to ensure good readability. Takes on the same values as font, and also a unitless value. If a unitless value is used, it means the line height is a multiple of the value provided.</li>
+                        <li>font-family: area to declare typefaces and fontstack that you would like to use.</li>
+                    </ul>
+                </td>
+                <td><img src="/images/font.png" alt=""></td>
+            </tr> 
+        </tbody>
+    </table>
+    Gets Tips Here! <a href="https://css-tricks.com/complete-guide-table-element/">CSS TRICKS</a>
+</body>
+</html>
